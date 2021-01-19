@@ -201,7 +201,11 @@ class RdfParser:
 
         # The book might be licensed under GPL, public domain
         # or might be copyrighted
-        self.license = soup.find("dcterms:rights").text
+        element = soup.find("dcterms:rights")
+        if element is not None:
+            self.license = element.text
+        else:
+            self.license = "unknown"
 
         # Finding out all the file types this book is available in
         file_types = soup.find_all("pgterms:file")
