@@ -29,10 +29,10 @@ class UrlBuilder:
     """
 
     SERVER_NAME = "aleph_gutenberg_org"
-    RSYNC = "rsync://aleph.gutenberg.org/gutenberg/"
-    BASE_ONE = "http://aleph.gutenberg.org/"
-    BASE_TWO = "http://aleph.gutenberg.org/cache/epub/"
-    BASE_THREE = "http://aleph.gutenberg.org/etext"
+    RSYNC = "rsync://gutenberg.pglaf.org/gutenberg/"
+    BASE_ONE = "http://gutenberg.pglaf.org/"
+    BASE_TWO = "http://gutenberg.pglaf.org/cache/epub/"
+    BASE_THREE = "http://gutenberg.pglaf.org/etext"
 
     def __init__(self):
         self.base = self.BASE_ONE
