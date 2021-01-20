@@ -26,6 +26,7 @@ from gutenbergtozim.utils import (
 )
 from gutenbergtozim.s3 import download_from_cache
 
+
 IMAGE_BASE = "http://gutenberg.pglaf.org/cache/epub/"
 
 # for development
